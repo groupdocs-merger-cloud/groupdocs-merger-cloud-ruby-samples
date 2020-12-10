@@ -6,7 +6,7 @@ require './Common.rb'
 class JoinMultipleDocuments
     
     def self.Run()    
-        documentApi = GroupDocsMergerCloud::DocumentApi.from_keys($app_sid, $app_key)
+        documentApi = GroupDocsMergerCloud::DocumentApi.from_config($config)
 
         item1 = GroupDocsMergerCloud::JoinItem.new
         item1.file_info = GroupDocsMergerCloud::FileInfo.new

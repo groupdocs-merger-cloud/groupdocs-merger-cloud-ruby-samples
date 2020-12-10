@@ -6,7 +6,7 @@ require './Common.rb'
 class SplitToMultiPageDocuments
     
     def self.Run()    
-        documentApi = GroupDocsMergerCloud::DocumentApi.from_keys($app_sid, $app_key)
+        documentApi = GroupDocsMergerCloud::DocumentApi.from_config($config)
 
         options = GroupDocsMergerCloud::SplitOptions.new
         options.file_info = GroupDocsMergerCloud::FileInfo.new

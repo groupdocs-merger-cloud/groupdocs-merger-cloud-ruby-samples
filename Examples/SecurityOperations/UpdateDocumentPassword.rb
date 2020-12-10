@@ -6,7 +6,7 @@ require './Common.rb'
 class UpdateDocumentPassword
     
     def self.Run()    
-        securityApi = GroupDocsMergerCloud::SecurityApi.from_keys($app_sid, $app_key)
+        securityApi = GroupDocsMergerCloud::SecurityApi.from_config($config)
 
         options = GroupDocsMergerCloud::UpdatePasswordOptions.new
         options.file_info = GroupDocsMergerCloud::FileInfo.new

@@ -6,7 +6,7 @@ require './Common.rb'
 class SwapPages
     
     def self.Run()    
-        pagesApi = GroupDocsMergerCloud::PagesApi.from_keys($app_sid, $app_key)
+        pagesApi = GroupDocsMergerCloud::PagesApi.from_config($config)
 
         options = GroupDocsMergerCloud::SwapOptions.new
         options.file_info = GroupDocsMergerCloud::FileInfo.new

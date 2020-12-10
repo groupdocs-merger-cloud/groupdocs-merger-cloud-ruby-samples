@@ -6,7 +6,7 @@ require './Common.rb'
 class CheckDocumentPasswordProtection
     
     def self.Run()    
-        securityApi = GroupDocsMergerCloud::SecurityApi.from_keys($app_sid, $app_key)
+        securityApi = GroupDocsMergerCloud::SecurityApi.from_config($config)
 
         result = securityApi.check_password(GroupDocsMergerCloud::CheckPasswordRequest.new("WordProcessing/password-protected.docx"))
         
