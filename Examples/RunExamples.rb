@@ -22,7 +22,11 @@ class RunExamples
 
   require './DocumentOperations/JoinMultipleDocuments.rb'
   puts("Executing JoinMultipleDocuments...")
-  JoinMultipleDocuments.Run()    
+  JoinMultipleDocuments.Run()
+
+  require './DocumentOperations/JoinDocumentsCrossFormat.rb'
+  puts("Executing JoinDocumentsCrossFormat...")
+  JoinDocumentsCrossFormat.Run()
 
   require './DocumentOperations/JoinPagesFromVariousDocuments.rb'
   puts("Executing JoinPagesFromVariousDocuments...")
@@ -31,6 +35,10 @@ class RunExamples
   require './DocumentOperations/PreviewDocument.rb'
   puts("Executing PreviewDocument...")
   PreviewDocument.Run() 
+
+  require './DocumentOperations/ImportAttachment.rb'
+  puts("Executing ImportAttachment...")
+  ImportAttachment.Run()   
 
   require './DocumentOperations/SplitDocument/SplitToMultiPageDocuments.rb'
   puts("Executing SplitToMultiPageDocuments...")

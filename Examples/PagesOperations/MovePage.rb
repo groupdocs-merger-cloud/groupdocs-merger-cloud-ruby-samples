@@ -1,5 +1,4 @@
 # Import modules
-require 'groupdocs_merger_cloud'
 require './Common.rb'
 
 # This example demonstrates how to move document page to a new position

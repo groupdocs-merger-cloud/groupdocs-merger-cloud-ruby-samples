@@ -1,5 +1,4 @@
 # Import modules
-require 'groupdocs_merger_cloud'
 require './Common.rb'
 
 # This example demonstrates how to split the document to several one-page documents (by start/end page numbers)

@@ -1,5 +1,4 @@
 # Import modules
-require 'groupdocs_merger_cloud'
 require './Common.rb'
 
 # This example demonstrates how to extract document pages by specifying their numbers
