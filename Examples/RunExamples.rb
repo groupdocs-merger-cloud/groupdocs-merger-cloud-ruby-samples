@@ -28,6 +28,10 @@ class RunExamples
   puts("Executing JoinWordDocumentsContinous...")
   JoinWordDocumentsContinous.Run()  
 
+  require './DocumentOperations/JoinImages.rb'
+  puts("Executing JoinImages...")
+  JoinImages.Run()  
+
   require './DocumentOperations/JoinDocumentsCrossFormat.rb'
   puts("Executing JoinDocumentsCrossFormat...")
   JoinDocumentsCrossFormat.Run()
